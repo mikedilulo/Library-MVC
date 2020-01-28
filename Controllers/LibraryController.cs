@@ -14,6 +14,7 @@ namespace library.Controllers
       while (_running)
       {
         Service.PrintBooks();
+        _running = false;
       }
     }
   }

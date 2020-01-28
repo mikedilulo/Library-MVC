@@ -12,13 +12,13 @@ namespace library.Models
 
 
 
-    public Book(string title, string title1, int pages, string description, string author)
+    public Book(string title, string title1, int pages, string description, string author, bool available)
     {
       Title = title;
       Pages = pages;
       Description = description;
       Author = author;
-      Available = true;
+      Available = available;
     }
   }
 }
