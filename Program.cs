@@ -1,4 +1,5 @@
 ﻿using System;
+using library.Controllers;
 using library.Models;
 
 namespace library
@@ -7,7 +8,8 @@ namespace library
   {
     static void Main(string[] args)
     {
-      //TODO this is where the run method will go for my controller
+      LibraryController lc = new LibraryController();
+      lc.Run();
     }
   }
 }
