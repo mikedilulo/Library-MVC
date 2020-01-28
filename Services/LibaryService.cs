@@ -19,23 +19,22 @@ namespace library.Services
       Short mousey = new Short("Play", "The Mouse Adventures", "The Fellowship of the Mouse", 85, "This is an adventure about a mouse that will head to the depths of the cave to retrieve a medal", "Speedy Gonzalez", true);
 
 
-      Library.AddBook(lotr);
+      Library.AddBook(new List<Book>() { lotr, starwars, mousey });
 
 
     }
     public void PrintBooks()
     {
-      string template = "Available Books";
+      string template = "Available Books: \n";
       for (int i = 0; i < Library.Books.Count; i++)
       {
         Book book = Library.Books[i];
         if (book.Available)
         {
           template += $"{i + 1}) {book.Title} \n";
-          Console.WriteLine(template);
-
         }
       }
+      System.Console.WriteLine(template);
     }
 
 
