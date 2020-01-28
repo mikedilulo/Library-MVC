@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace library.Models
@@ -11,6 +12,11 @@ namespace library.Models
     public void AddBook(Book b)
     {
       Books.Add(b);
+    }
+
+    public void AddBook(List<Book> books)
+    {
+      Books.AddRange(books);
     }
 
 
