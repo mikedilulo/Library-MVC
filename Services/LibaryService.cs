@@ -31,7 +31,7 @@ namespace library.Services
         Book book = Library.Books[i];
         if (book.Available)
         {
-          template += $"{i + 1}) {book.Title} \n";
+          template += $"{i + 1}) {book.Title} - {book.Author} \n";
         }
       }
       //NOTE this needs to be called outside of the loop so it will run the template than console.WriteLine 
